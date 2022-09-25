@@ -42,3 +42,7 @@ Below is a plot for a 21x21 run. The system completes with a uniform spin down c
 
 ![](https://i.imgur.com/m55lS9N.png)
 
+Here a 20x20 run finishes with uniform spin up.
+
+![](https://i.imgur.com/ysLkGq5.png)
+
