@@ -14,9 +14,6 @@ The magnetization is the average of the spin values:
 $$M = \frac{1}{N}\sum_i s_i$$
 
 
-$$\Delta E = E_2 - E_1$$
-
-$$ P = e^{-\Delta E/k_B T}$$
 
 This program follows these steps to simulate the gradual transition to magnetization. 
 
