@@ -15,7 +15,7 @@ $$M = \frac{1}{N}\sum_i \sigma_i$$
 
 
 
-This program follows these steps to simulate the gradual transition to magnetization. 
+This program follows these steps to simulate the gradual transition to magnetization:
 
 **1.** A 2D square arraylist with random values of 1 and -1 is created according to desired size. These values represent the spin up and spin down. 
 
