@@ -35,7 +35,7 @@ This program follows these steps to simulate the gradual transition to magnetiza
 
 [Here is a video for a 50x50 grid.](https://www.youtube.com/watch?v=5gmFp_87Nh8) Due to the large size of the array, this video doesn't run long enough for the system to reach uniformity.
 
-The total energy and average magnetization of the system is stored and exported as a csv file (ising.csv). Run the ising.py file to generate plots of these quantities if desired. 
+The total energy and average magnetization of the system is stored and exported as a csv file (***ising.csv***). Run the ***ising.py*** file to generate plots of these quantities if desired. 
 
 Below is a plot for a 21x21 run. The system completes with a uniform spin down configuration as can be seen by the -1 magnetization. 
 
