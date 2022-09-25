@@ -23,7 +23,8 @@ This program follows these steps to simulate the gradual transition to magnetiza
 
 **3.**  A value in the arraylist is chosen at random and has its sign flipped. This represents the flip in spin.
 
-**4.**  The energy of the old and new configuration is calculated and compared. If the energy of the new configuration is less or equal to the old, the new configuration is favorable and is accepted. $\Delta E = E_2 - E_1$
+**4.**  The energy of the old and new configuration is calculated and compared. $\Delta E = E_2 - E_1$ 
+If the energy of the new configuration is less or equal to the old, the new configuration is favorable and is accepted. 
 
 **5.**  If the energy of the new configuration is greater, a random number between 0 and 1 is generated. This random number is then compared to $e^{-\Delta E/k_B T}$ . If the random number is less the new configuration is accepted. Otherwise, the system is reverted to before the flip.
 
