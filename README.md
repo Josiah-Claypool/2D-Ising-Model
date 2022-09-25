@@ -11,7 +11,7 @@ $$H(\sigma) =  -J\sum_{i j}^{N} \sigma_i \sigma_{j}$$
 The magnetization is the average of the spin values:
 
 
-$$M = \frac{1}{N}\sum_i s_i$$
+$$M = \frac{1}{N}\sum_i \sigma_i$$
 
 
 
