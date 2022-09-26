@@ -1,6 +1,6 @@
 # 2D-Ising-Model
 
-Below the Curie temperature $T_C$ ferromagnetic materials will spontaneously magnetize without the presence of a magnetic field as the magnetic moments of the atoms align naturally over time. This program is a 2D Ising Model that uses a Monte Carlo method to simulate the thermodynamics of the system.
+Below the Curie temperature $T_C$ ferromagnetic materials will spontaneously magnetize without the presence of a magnetic field as the magnetic moments of the atoms align naturally over time. This program is a 2D Ising Model that uses the Metropolis–Hastings Monte Carlo algorithm to simulate the thermodynamics of the system.
 
 The energy of the configuration is:
 
@@ -14,6 +14,7 @@ The magnetization is the average of the spin values:
 
 
 $$M = \frac{1}{N}\sum_i \sigma_i$$
+
 
 
 
@@ -35,6 +36,8 @@ If the energy of the new configuration is less or equal to the old, the new conf
 **7.**  Returns to step **3** until either the amount of desired iterations is reached or the system reaches uniform spin.
 
 The total energy and average magnetization of the system is stored and exported as a csv file (***ising.csv***). Run the ***ising.py*** file to generate plots of these quantities if desired. 
+
+For more reading regarding the physics see the wikipedia articles on [Ising model](https://en.wikipedia.org/wiki/Ising_model), [ferromagnetism](https://en.wikipedia.org/wiki/Ferromagnetism#Curie_temperature), and [monte carlo methods](https://en.wikipedia.org/wiki/Monte_Carlo_method).
 
 -------
 
