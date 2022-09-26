@@ -1,10 +1,16 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class DeepCopy {
 
+    /**
+     * Creates a deep copy of a 2D arraylist of integers to avoid accidentally changing arraylist with shallow copies
+     *
+     * @param theArray The original arraylist that will be deep copied
+     * @return A deep copy of the submitted arraylist
+     */
+
     public static ArrayList<ArrayList<Integer>> deepCopy2D(ArrayList<ArrayList<Integer>> theArray) {
-        ArrayList<ArrayList<Integer>> fullClone = new ArrayList<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> fullClone = new ArrayList<>();
         int width = theArray.get(0).size();
 
         for (int i = 0; i < width; i++) {

@@ -11,6 +11,7 @@ public class InitialIsingArray {
     int[] spinIndices = new int[2];
     int width;
     double boltzmann;
+    int numOfIterations;
 
 
     /**
@@ -24,10 +25,11 @@ public class InitialIsingArray {
      *                      a good temperature to use is 0.3
      * @param boltzmann   the boltzmann constant. here we set it to 1
      */
-    public InitialIsingArray(int width, String type, double temperature, double boltzmann) {
+    public InitialIsingArray(int width, String type, double temperature, double boltzmann, int numOfIterations) {
         this.temperature = temperature;
         this.width = width;
         this.boltzmann = boltzmann;
+        this.numOfIterations = numOfIterations;
         ArrayList<ArrayList<Integer>> holdingArray = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < this.width; i++) {
@@ -53,6 +55,10 @@ public class InitialIsingArray {
 
     public int[] getSpinIndices() {
         return spinIndices;
+    }
+
+    public int getNumOfIterations() {
+        return numOfIterations;
     }
 
     /**

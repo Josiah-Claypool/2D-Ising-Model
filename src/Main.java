@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        InitialIsingArray isingSystem = new InitialIsingArray(7, "random", 0.3, 1);
+        InitialIsingArray isingSystem = new InitialIsingArray(13, "random", 0.3, 1, 50000);
         double mag = isingSystem.magnetization(isingSystem.getIsingArray());
         double energy = isingSystem.totalEnergy(isingSystem.getIsingArray());
         ArrayList<Double> magArray = new ArrayList<>(); // storing the magnetization values
@@ -17,12 +17,11 @@ public class Main {
 
         JFrame isingJFrame = isingSystem.initialJFrame(isingSystem.getIsingArray());
 
-        int numOfIterations = 10000;
-        for (int i = 1; i < numOfIterations; i++) {
+        for (int i = 1; i < isingSystem.getNumOfIterations(); i++) {
             isingSystem.flipEvent(isingSystem.getIsingArray());
             isingJFrame = isingSystem.updateJFrame(isingJFrame);
-            mag = isingSystem.magnetization(isingSystem.getIsingArray());
-            energy = isingSystem.totalEnergy(isingSystem.getIsingArray());
+            mag = isingSystem.magnetization(isingSystem.getIsingArray()); // calc magnetization
+            energy = isingSystem.totalEnergy(isingSystem.getIsingArray()); // calc energy
             energyArray.add(energy);
             magArray.add(mag);
             System.out.println(i);
@@ -40,9 +39,7 @@ public class Main {
             row.add(String.valueOf(energyArray.get(i)));
             writer.println(String.join(",", row));
             row.clear();
-
         }
         writer.close();
-
     }
 }
