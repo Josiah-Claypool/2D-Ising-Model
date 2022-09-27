@@ -1,6 +1,6 @@
 # 2D-Ising-Model
 
-Below the Curie temperature, $T_C$, ferromagnetic materials will spontaneously magnetize without the presence of a magnetic field as the magnetic moments of the atoms align naturally over time. This program is a 2D Ising Model that uses the Metropolis–Hastings Monte Carlo algorithm to simulate the thermodynamics of the system.
+Below the Curie temperature, $T_C$, ferromagnetic materials will spontaneously magnetize without the presence of a magnetic field as the magnetic moments of the electrons align naturally over time. This program is a 2D Ising Model that uses the Metropolis–Hastings Monte Carlo algorithm to simulate the thermodynamics of the system.
 
 The energy of the configuration is:
 
