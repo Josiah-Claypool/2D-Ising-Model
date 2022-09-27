@@ -37,7 +37,7 @@ If the energy of the new configuration is less or equal to the old, the new conf
 
 The total energy and average magnetization of the system is stored and exported as a csv file (***ising.csv***). Run the ***ising.py*** file to generate plots of these quantities if desired. 
 
-For more reading regarding the physics see the wikipedia articles on [Ising model](https://en.wikipedia.org/wiki/Ising_model), [ferromagnetism](https://en.wikipedia.org/wiki/Ferromagnetism#Curie_temperature), and [monte carlo methods](https://en.wikipedia.org/wiki/Monte_Carlo_method).
+For more reading regarding the physics see the wikipedia articles on [Ising model](https://en.wikipedia.org/wiki/Ising_model), [ferromagnetism](https://en.wikipedia.org/wiki/Ferromagnetism#Curie_temperature), and [Monte Carlo methods](https://en.wikipedia.org/wiki/Monte_Carlo_method).
 
 -------
 
