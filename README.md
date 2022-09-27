@@ -1,6 +1,6 @@
 # 2D-Ising-Model
 
-Below the Curie temperature $T_C$ ferromagnetic materials will spontaneously magnetize without the presence of a magnetic field as the magnetic moments of the atoms align naturally over time. This program is a 2D Ising Model that uses the Metropolis–Hastings Monte Carlo algorithm to simulate the thermodynamics of the system.
+Below the Curie temperature, $T_C$, ferromagnetic materials will spontaneously magnetize without the presence of a magnetic field as the magnetic moments of the atoms align naturally over time. This program is a 2D Ising Model that uses the Metropolis–Hastings Monte Carlo algorithm to simulate the thermodynamics of the system.
 
 The energy of the configuration is:
 
@@ -27,7 +27,7 @@ This program follows these steps to simulate the gradual transition to magnetiza
 **3.**  A value in the arraylist is chosen at random and has its sign flipped. This represents the flip in spin.
 
 **4.**  The energy of the old and new configuration is calculated and compared. $\Delta E = E_2 - E_1$ 
-If the energy of the new configuration is less or equal to the old, the new configuration is favorable and is accepted. 
+If the energy of the new configuration is less than the old, the new configuration is favorable and is accepted. 
 
 **5.**  If the energy of the new configuration is greater, a random number between 0 and 1 is generated. This random number is then compared to $e^{-\Delta E/k_B T_C}$ . If the random number is less the new configuration is accepted. Otherwise, the system is reverted to before the flip.
 
@@ -41,15 +41,20 @@ For more reading regarding the physics see the wikipedia articles on [Ising mode
 
 -------
 
-[Here is a video for a 50x50 grid.](https://www.youtube.com/watch?v=5gmFp_87Nh8) Due to the large size of the array, this video doesn't run long enough for the system to reach uniformity.
+[Here is a video of a run with a 20x20 grid.](https://www.youtube.com/watch?v=y1jBtIeOM-M)
+
+Below is the corresponding python plot for the energy and magnetization. The system completes with a uniform spin up configuration as can be seen by the magnetization of 1.
+
+![](https://i.imgur.com/4aA8aWs.png)
 
 
 
-Below is a plot for a 21x21 run. The system completes with a uniform spin down configuration as can be seen by the -1 magnetization. 
+Here a run finishes with uniform spin down.
 
 ![](https://i.imgur.com/m55lS9N.png)
 
-Here a 20x20 run finishes with uniform spin up.
 
-![](https://i.imgur.com/ysLkGq5.png)
 
+A run with a temperature above $T_C$, where spontaneous magnetization doesn't occur.
+
+![](https://i.imgur.com/HyWYe2h.png)
